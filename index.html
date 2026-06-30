@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type ="text" id ="calcdisplay"><br>
+     <button onclick="squareRoot()">√</button>
+     <button onclick="square()">x²</button>
+     <button onclick="power()">xʸ</button>   
+     <button onclick="percent()">%</button>   
+     <button onclick="dixey('(')">(</button>
+     <button onclick="dixey(')')">)</button><br>
+     <button onclick="dixey('9')">9</button>
+     <button onclick="dixey('8')">8</button>
+     <button onclick="dixey('7')">7</button>
+     <button onclick="dixey('/')">÷</button><br>
+     <button onclick="dixey('6')">6</button>
+     <button onclick="dixey('5')">5</button>
+     <button onclick="dixey('4')">4</button>
+     <button onclick="dixey('*')">x</button><br>
+     <button onclick="dixey('3')">3</button>
+     <button onclick="dixey('2')">2</button>
+     <button onclick="dixey('1')">1</button>
+     <button onclick="dixey('-')">-</button><br>
+     <button onclick="dixey('0')">0</button>
+     <button onclick="dixey('.')">.</button>
+     <button onclick="dixey('=')">=</button>
+     <button onclick="dixey('+')">+</button><br>
+     <button onclick="format('C')">C</button>
+
+     <script>
+     function dixey(num)
+     {const dixeyshow =
+     document.getElementById("calcdisplay");
+     dixeyshow.value += num;
+     }
+      
+     function format(){
+        document.getElementById("calcdisplay").value = "";
+     }
+     </script>
+    </body>
+</html>
